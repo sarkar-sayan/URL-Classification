@@ -16,7 +16,9 @@ This project aims to classify URLs into two categories: productive and non-produ
 Briefly describe the problem and the motivation behind this project. Explain why URL classification is important.
 
 ## Dataset
-Provide details about the dataset you're using. Mention the source, size, and any preprocessing steps applied.
+For this project, a self-created dataset is used, but you can procure any from Kaggle itself, just remember to replace the labels in the code accordingly.  
+Sample dataset used:
+![image](https://github.com/sarkar-sayan/URL-Classification/assets/105176992/1b80ea00-1c4a-4081-a961-7c526dd66369)
 
 ## Data Preprocessing
 Describe how you cleaned and prepared the data. Include steps like removing duplicates, handling missing values, and tokenization.
