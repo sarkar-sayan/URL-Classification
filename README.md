@@ -1,4 +1,4 @@
-# URL Classification into Productive or Non-Productive
+# URL Classification : Productive or Non-Productive
 
 ## Overview
 This project aims to classify URLs into two categories: productive and non-productive based on their web content. We'll use Python for the implementation.
