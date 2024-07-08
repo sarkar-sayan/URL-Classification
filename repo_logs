@@ -1,29 +1,23 @@
-Original File:
-  POC_1_URL_Classification.ipynb
+Original File:             POC_1_URL_Classification.ipynb
 
 Lacked: 1. User-defined keywords to influence classification
         2. Website content language barrier, i.e, for languages other than English
 
-Modified File (1):
-  POC_1_URL_Classification_mod.ipynb
+Modified File (1):         POC_1_URL_Classification_mod.ipynb
 
 Added:  1. User-defined productive and non-productive keywords to influence classification
         2. Langdetect Googletrans Translator to override website content language barrier, i.e, for languages other than English
-
 Lacked: 1. Simplicity due to being a Notebook file
         2. User input interface
 
-Modified File (2):
-  POC_1_URL_Classification_menu-driven.ipynb
+Modified File (2):         POC_1_URL_Classification_menu-driven.ipynb
 
 Added:  1. Self-created functions, which allowed me to break down my code into smaller, manageable pieces, promoting code organization, reusability, and modularity.
         2. Menu-driven for simplicity and user-friendly code
-
 Lacked: 1. Sufficient data in dataset
         2. User input interface
 
-Modified File (3):
-  POC_1_URL_Classification_menu-driven_Add_Data.ipynb
+Modified File (3):         POC_1_URL_Classification_menu-driven_Add_Data.ipynb
 
 Added:  1. Self-created functions to push the resulting output into the original dataset to counter lack of data problem
         2. Choice to push data into dataset, so as to prevent wrong results into the dataset, which will hamper further classifications
