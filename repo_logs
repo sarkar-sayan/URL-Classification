@@ -29,3 +29,8 @@ Modified File (4):         POC_1_URL_Classification_menu-driven_AddCorrectData.i
 
 Added:  1. Choice to push correct data into dataset (judged by user), so as to prevent wrong results into the dataset, which will hamper further classifications.
 Lacked: 1. Time consuming to add corrected data into dataset to enlargen it.
+
+On Further Testing:
+        1. Some websites return Error 400 or Error 403 on Requests, even after using User_agents
+        2. Presence of such url with a label in dataset results in huge classification errors
+        3. Small dataset size results in the rise of importance of each and every url present
