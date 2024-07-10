@@ -31,6 +31,7 @@ Added:  1. Choice to push correct data into dataset (judged by user), so as to p
 Lacked: 1. Time consuming to add corrected data into dataset to enlargen it.
 
 On Further Testing:
-        1. Some websites return Error 400 or Error 403 on Requests, even after using User_agents
-        2. Presence of such url with a label in dataset results in huge classification errors
-        3. Small dataset size results in the rise of importance of each and every url present
+        1. Some websites return Error 400 or Error 403 on Requests, even after using User_agents.
+        2. Presence of such url with a label in dataset results in huge classification errors.
+        3. Small dataset size results in the rise of importance of each and every url present.
+        4. Further Testing required using varieties of url of the same domain to check whether domain affects classification or not.
