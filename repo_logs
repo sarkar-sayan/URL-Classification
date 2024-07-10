@@ -25,7 +25,7 @@ Added:  1. Self-created functions to push the resulting output into the original
 Lacked: 1. Discards the wrong resulting output (user judges the response/result to be right or wrong :: Initially).
         2. Small dataset problem prevails if wrong results are discarded, so thinking of inserting the opposite classification in case of wrong output.
 
-Modified File (4):         POC_1_URL_Classification_menu-driven_AddCorrectData.ipynb
+Modified File (4):         POC_1_URL_Classification_menu-driven_AddCorrectData.ipynb -> POC_1_URL_Classification_Close2Final.ipynb
 
 Added:  1. Choice to push correct data into dataset (judged by user), so as to prevent wrong results into the dataset, which will hamper further classifications.
 Lacked: 1. Time consuming to add corrected data into dataset to enlargen it.
