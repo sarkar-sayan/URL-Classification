@@ -35,3 +35,11 @@ On Further Testing:
         2. Presence of such url with a label in dataset results in huge classification errors.
         3. Small dataset size results in the rise of importance of each and every url present.
         4. Further Testing required using varieties of url of the same domain to check whether domain affects classification or not.
+
+Modified File (4):         POC_1_URL_Classification_Final.ipynb
+
+Added:  1. Increasing sample url in dataset removes maximum error.
+        2. Included domain checker with sample domain inputs from user.
+        3. Same procedure as keywords_management, domain_management adds or deletes sample productive or non-productive domains.
+        4. Before classification, url's domain is extracted. If present in either of the provided sample domain categories, it is classified as such.
+        5. The classifier model is then skipped, else normal procedure.
