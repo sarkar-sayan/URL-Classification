@@ -44,6 +44,7 @@ Sample dataset used:
 ![image](https://github.com/sarkar-sayan/URL-Classification/assets/105176992/1b80ea00-1c4a-4081-a961-7c526dd66369)
 
 ## Data Preprocessing
+Read the [repo_logs](https://github.com/sarkar-sayan/URL-Classification/blob/main/repo_logs) file first for better understanding.
 ##### 1. get_metadata_from_url(url):
 This function retrieves metadata (such as title, description, image, and text) from a given URL.  
 It uses the requests library to fetch the webpage content and BeautifulSoup for HTML parsing.  
