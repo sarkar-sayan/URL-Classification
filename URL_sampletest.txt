@@ -1,0 +1,26 @@
+URLs
+------------- originally in DATASET
+
+https://stackoverflow.com/questions/66341659/electron-ipcmain-how-to-gracefully-handle-throwing-an-error			P
+https://www.anandabazar.com/west-bengal/state-government-has-announced-compensation-in-the-case-of-death-caused-by-a-beating-dgtl/cid/1528042#google_vignette																NP E403
+https://www.barandbench.com/news/sim-swap-scam-ncdrc-restores-order-directing-airtel-compensate-army-man-lost-287-lakh		NP
+https://www.youtube.com/watch?v=D_qLCwDiRs4\u0026t=365s										NP
+https://www.youtube.com/watch?v=UdcPhnNjSEw											P
+
+--------------------------- newly added in DATASET while testing
+
+https://about.instagram.com/blog/announcements/introducing-instagram-reels-announcement			NP E400
+https://www.w3schools.com/python/pandas/pandas_json.asp							P   correct result
+https://stackoverflow.com/questions/13055208/httperror-http-error-403-forbidden				P   correct result
+https://www.youtube.com/watch?v=J9K3ZZa5gBM&si=_I477iwIODFyHOuZ						P   correct result
+https://www.youtube.com/watch?v=QfRHgmEGfvw&list=RDCLAK5uy_ksEjgm3H_7zOJ_RHzRjN1wY-_FFcs7aAU		NP  correct result
+https://open.spotify.com/album/0LcyzKKw3RjFKL6ygISTeU							NP  correct (sometimes E403)
+https://www.facebook.com/100044413150303/videos/facebook-reels-expression-update/505333595136542/	P   xNP
+
+------------------------------------------- extra testing
+https://www.youtube.com/shorts/b8GCiiMm-rc								NP  correct result
+https://www.youtube.com/shorts/2Wit5CX87_M								NP  correct result
+https://www.youtube.com/shorts/g9fIWtSexLs								P   correct result
+https://www.youtube.com/shorts/XkzPmtzdIEY								NP  xP
+https://www.facebook.com/dianazubirismithofficial/videos/13-million-views-on-fb-reels-/415517760420542/	NP  correct result
+https://www.instagram.com/kiran.mazumder/reel/C5OCG4XBtFX/?hl=en					NP  correct result

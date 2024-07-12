@@ -1,0 +1,30 @@
+pip install langdetect googletrans==4.0.0-rc1
+
+imports:
+	numpy
+	pandas
+	requests
+	bs4
+	sklearn
+	nltk
+	langdetect
+	googletrans
+	random
+	string
+	
+
+Working:
+import  -> keyword management / domain management
+	-> prepare_dataset
+		- Pre-process
+			- def extract_domain(url)
+			- def get_metadata_from_url(url)
+			- def preprocess_metadata(metadata)
+				- def translate_text_if_needed(text)
+				- def preprocess_text(text)
+		- Keyword count in dataset
+	-> train_test_model
+	-> classification
+		- def extract_domain  #domain_check
+		- def classify_url
+		- def set_push
