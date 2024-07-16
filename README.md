@@ -45,37 +45,37 @@ Sample dataset used:
 
 ## Data Preprocessing
 Read the [repo_logs](https://github.com/sarkar-sayan/URL-Classification/blob/main/repo_logs) file first for better understanding.
-##### 1. get_metadata_from_url(url):
+##### 1. ```get_metadata_from_url(url)```:
 This function retrieves metadata (such as title, description, image, and text) from a given URL.  
 It uses the requests library to fetch the webpage content and BeautifulSoup for HTML parsing.  
 If an error occurs during the request (e.g., invalid URL), it returns an error message.  
 The extracted metadata is returned as a dictionary.  
-##### 2. preprocess_text(text):
+##### 2. ```preprocess_text(text)```:
 This function preprocesses text by:  
 Converting it to lowercase.  
 Removing punctuation.  
 Splitting it into tokens (words).  
 Filtering out stop words (common words like “the,” “and,” etc.).  
 The cleaned text is returned.  
-##### 3. translate_text_if_needed(text):
+##### 3. ```translate_text_if_needed(text)```:
 If the input text is not in English, this function attempts to translate it to English using the detect and translator libraries.  
 If translation fails or the text is already in English, it returns the original text.  
-##### 4. preprocess_metadata(metadata):
+##### 4. ```preprocess_metadata(metadata)```:
 Combines the cleaned title, description, and text from the metadata.  
 Translates them to English if needed.  
 Returns the combined and cleaned content.  
-##### 5. extract_domain(url):
+##### 5. ```extract_domain(url)```:
 Extracts the domain (e.g., “example.com”) from a given URL.  
-##### 6. prepare_dataset(productive_keywords, non_productive_keywords, dataset_url):
+##### 6. ```prepare_dataset(productive_keywords, non_productive_keywords, dataset_url)```:
 Reads a CSV dataset from the specified URL.  
 Keeps only the ‘url’ and ‘label’ columns.  
-Scrapes metadata for each URL using get_metadata_from_url.  
+Scrapes metadata for each URL using ```get_metadata_from_url()```.  
 Applies preprocessing to the metadata using preprocess_metadata.  
 Extracts the domain from each URL.  
 Calculates the count of productive and non-productive keywords in the cleaned content.  
 
 ## Feature Extraction
-##### 1. create_feature_matrix(df):
+##### 1. ```create_feature_matrix(df)```:
 This function creates a feature matrix from a DataFrame (df).  
 It performs the following steps:  
 Uses a vectorizer (which is not defined in the snippet) to transform the ‘clean_content’ column into a TF-IDF (Term Frequency-Inverse Document Frequency) matrix.  
@@ -83,7 +83,7 @@ Extracts the ‘productive_keyword_count’ and ‘non_productive_keyword_count�
 Combines the TF-IDF matrix and keyword counts horizontally (using np.hstack()).  
 The resulting feature matrix (X) contains both textual features (TF-IDF) and keyword counts.  
 ##### 2. Usage:
-The snippet ends with X = create_feature_matrix(data), where data is presumably a DataFrame containing relevant columns (‘clean_content’, ‘productive_keyword_count’, ‘non_productive_keyword_count’).  
+The snippet ends with ```X = create_feature_matrix(data)```, where data is presumably a DataFrame containing relevant columns (‘clean_content’, ‘productive_keyword_count’, ‘non_productive_keyword_count’).  
 The resulting feature matrix X can be used for further analysis or modeling.  
 Remember to define the vectorizer before using this code snippet, and ensure that your data DataFrame contains the necessary columns.  
 
@@ -97,15 +97,15 @@ I've chosen the MultinomialNB (Naive Bayes) classifier for my model.
 The model is trained using the training data (X_train, y_train).  
 
 ## Evaluation
-I’ve made predictions on the test set using model.predict(X_test).  
-The accuracy of the model is calculated using accuracy_score(y_test, y_pred).  
+I’ve made predictions on the test set using ```model.predict(X_test)```.  
+The accuracy of the model is calculated using ```accuracy_score(y_test, y_pred)```.  
 The printed output shows the accuracy, precision, recall, F1-score, and support for each class (productive and non-productive).  
 #### Interpretation:
 An accuracy of 1.0 indicates that the model perfectly predicts the test data.  
 The precision, recall, and F1-score are also 1.0 for both classes, suggesting excellent performance.  
 
 ## Conclusion
-Multinomial Naive Bayes is a probabilistic classifier to calculate the probability distribution of text data, which makes it well-suited for data with features that represent discrete frequencies or counts of events in various natural language processing (NLP) tasks.  
+```Multinomial Naive Bayes``` is a probabilistic classifier to calculate the probability distribution of text data, which makes it well-suited for data with features that represent discrete frequencies or counts of events in various natural language processing (NLP) tasks.  
 The term “multinomial” refers to the type of data distribution assumed by the model.  The features in text classification are typically word counts or term frequencies. The multinomial distribution is used to estimate the likelihood of seeing a specific set of word counts in a document.  
 Also it works way better in smaller datasets as it assumes some features beforehand (being based on Bayes Theorem of Probability)  
 
